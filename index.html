@@ -1,35 +1,37 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="css/output.css">
-    <script
-  src="https://code.jquery.com/jquery-3.3.1.js"
-  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-  crossorigin="anonymous"></script>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/output.css">
+  <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
   <script type="text/javascript" src="js/scripts.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
-    <title></title>
-  </head>
-
+  <link rel="tracks" href="tracks.html">
+  <title>Home</title>
+</head>
   <body>
-    <div class="content-wrapper">
-      <div class="content">
-        <div class="intro-paragraph">
-          <h1>Learn How To Program</h1>
-          <p>Hi, welcome!<br><br>This site is a step-by-step guide to take you from zero experience to web programmer in a few short months, and contains everything you need, including lessons and practice exercises. The content is the curriculum for <a href="https://epicodus.com">Epicodus</a>, a school for people who want to change careers into programming. You're also welcome to go through the site on your own, or use it as a curriculum for another school or class.</p>
+    <div class="container">
+      <div class="splash" onload="fadeIn(this)">
+        <img class="logo" src="img/logo.png" alt="logo">
+        <div class="copyright">
+          <img src="img/inc.png" alt="logo">
         </div>
-        <div class="intro-video">
-          <iframe src="https://player.vimeo.com/video/150363013" width="1020" height="573.75" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="page">
+        <div class="nav">
+          <img class="circle" src="img/e.png" alt="logo">
+          <div class="nav-bar">
+            <button type="button" name="button"><img class="search" src="img/search.png" alt="search"></button>
+          </div>
         </div>
-        <div class="buttons">
-          <button type="button" name="button" id="start"><a href="tracks.html">Let's get started!</a></button>
-          <button type="button" name="button" id="epicodus"><a href="https://epicodus.com">Go to Epicodus main page</a></button>
+        <div class="location">
+          <img class="logo" src="img/logo.png" alt="logo">
+          <div class="welcome">
+            <p>Welcome to Epicodus<br><br>Epicodus is the most affordable full-time, in-person code school, and one of the few programs that includes an internship with a tech company as well as job search support.  Students graduate with real-life work experience already on their resumes, a dedicated team to help land their first job, and a close community of peers and instructors supporting them along the way.</p>
+          </div>
+          <a href="tracks.html"><button type="button" class="button" name="locations">Tracks</button></a>
         </div>
       </div>
     </div>
-    <footer class="bottom-logo">
-      <a><img src="img/epicodus.png" alt="Epicodus Logo"></a>
-    </footer>
   </body>
 </html>
